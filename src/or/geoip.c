@@ -351,7 +351,8 @@ geoip_load_file(sa_family_t family, const char *filename)
   tor_assert(family == AF_INET || family == AF_INET6);
 
   if (!(f = tor_fopen_cloexec(filename, "r"))) {
-    log_fn(severity, LD_GENERAL, "Failed to open GEOIP file %s.  %s",
+    log_fn(severity, LD_GENERAL, "Failed to open GEOIP file %s.  %s"
+           " Do you have the tor-geoipdb package installed?",
            filename, msg);
     return -1;
   }

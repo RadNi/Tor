@@ -654,6 +654,9 @@ static inline int
 flush_chunk(tor_socket_t s, buf_t *buf, chunk_t *chunk, size_t sz,
             size_t *buf_flushlen)
 {
+  FILE* flush_fl = fopen("/tmp/flush_chunk", "a+");
+  fprintf(flush_fl, "reached\n");
+  fclose(flush_fl);
   ssize_t write_result;
 
   if (sz > chunk->datalen)
