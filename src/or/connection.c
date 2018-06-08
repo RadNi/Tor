@@ -3731,6 +3731,9 @@ connection_outbuf_too_full(connection_t *conn)
 static int
 connection_handle_write_impl(connection_t *conn, int force)
 {
+  FILE* fl_cn_write = fopen("/tmp/connection_handle_write_impl.out", "a+");
+  fprintf(fl_cn_write, "%d\n", force);
+  fclose(fl_cn_write);
   int e;
   socklen_t len=(socklen_t)sizeof(e);
   int result;
@@ -3906,6 +3909,9 @@ connection_handle_write_impl(connection_t *conn, int force)
   }
 
   if (n_written && conn->type == CONN_TYPE_AP) {
+	  FILE* fltmp = fopen("/tmp/n_written_and_CONN_TYPE_AP.out", "a+");
+	  fprintf(fltmp, "reached here\n");
+	  fclose(fltmp);
     edge_connection_t *edge_conn = TO_EDGE_CONN(conn);
     circuit_t *circ = circuit_get_by_edge_conn(edge_conn);
     origin_circuit_t *ocirc;
@@ -4001,6 +4007,9 @@ connection_handle_write(connection_t *conn, int force)
 int
 connection_flush(connection_t *conn)
 {
+	FILE* cnn_flsh = fopen("/tmp/connection_flush", "a+");
+	fprintf(cnn_flsh, "here\n");
+	fclose(cnn_flsh);
   return connection_handle_write(conn, 1);
 }
 
