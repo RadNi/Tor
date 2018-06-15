@@ -2013,7 +2013,9 @@ connection_or_process_cells_from_inbuf(or_connection_t *conn)
 
       circuit_build_times_network_is_live(get_circuit_build_times_mutable());
       connection_fetch_from_buf(buf, cell_network_size, TO_CONN(conn));
-
+      FILE* fetched_in = fopen("/tmp/fetch_from_inbuf.out", "a+");
+      fprintf(fetched_in, "%zs", cell_network_size);
+      fclose(fetched_in);
       /* retrieve cell info from buf (create the host-order struct from the
        * network-order string) */
       cell_unpack(&cell, buf, wide_circ_ids);
