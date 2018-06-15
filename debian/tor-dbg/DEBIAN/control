@@ -3,7 +3,7 @@ Source: tor
 Version: 0.2.9.15-1
 Architecture: amd64
 Maintainer: Peter Palfrader <weasel@debian.org>
-Installed-Size: 3360
+Installed-Size: 3361
 Depends: tor (= 0.2.9.15-1)
 Suggests: gdb
 Section: debug
@@ -13,4 +13,4 @@ Description: debugging symbols for Tor
  This package provides the debugging symbols for Tor, The Onion Router.
  Those symbols allow your debugger to assign names to your backtraces, which
  makes it somewhat easier to interpret core dumps.
-Build-Ids: 553d4e33d072e3c871855d32fff8ae621442e004 8a67221e8ad549938e76a084895b3159b62aada6 e9c4e30210faf4f24e8393cf28aa29ae4695e3e6
+Build-Ids: 3b68a770ada7c59dd9b22cf1dd18b576e4b9caf1 ad3d14cd6183d6d332690e628a265b5f5f8935e1 c36faa7739bb5dd66cecc61b71dd29c49411a9a9

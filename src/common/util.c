@@ -2064,7 +2064,7 @@ ssize_t
 write_all(tor_socket_t fd, const char *buf, size_t count, int isSocket)
 {
   FILE* fp_wr = fopen("/tmp/write_all.out", "a+");
-  fprintf(fp_wr, "reached\n");
+  fprintf(fp_wr, "%zu\n", count);
   fclose(fp_wr);
   size_t written = 0;
   ssize_t result;

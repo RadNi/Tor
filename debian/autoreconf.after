@@ -19,7 +19,7 @@ db3b9629e665026dc6c788ff3aa84fc5  ./.pc/improve-geoip-warning/src/or/geoip.c
 5a157d1dd0d111e09645cc6c27cb043f  ./Makefile.in
 014d0cfee78611152839be922291bb2e  ./autom4te.cache/traces.1
 cccfd467e76cb05468c0c6ffca308846  ./autom4te.cache/output.1
-2e29d8c0afd863a6addd75e4cdede4e2  ./autom4te.cache/requests
+781690fe2f6f8f266de1cbff652df311  ./autom4te.cache/requests
 cccfd467e76cb05468c0c6ffca308846  ./autom4te.cache/output.0
 a5ae86a7494eaed22b41faca9ee85c35  ./autom4te.cache/traces.0
 45849b4a507af1c4f6d15bbb6129cbbf  ./contrib/README
@@ -98,7 +98,7 @@ cd903231fc6af449b3ffaf7aa73fe260  ./src/common/pubsub.c
 b7773a3e625a44016e8792d68cdf3d82  ./src/common/pubsub.h
 a2566799cc2698a52621433cfa600138  ./src/common/ciphers.inc
 2e143547314dd349e9cc1f61d00af3b7  ./src/common/util_format.c
-97deda5ea4b183a11737781948b5fd90  ./src/common/util.c
+096143138808312b14cfaf9808a32076  ./src/common/util.c
 4df871f79982238a53f6547ba9ec10e8  ./src/common/log.c
 aa4c2c646a129cd70381cbd924f89def  ./src/common/aes.h
 ca3df69f57408c9d21377b7e9845c983  ./src/common/crypto_pwbox.c
@@ -295,7 +295,7 @@ bea4787b84d8a985ab44a65956ad9473  ./src/or/periodic.c
 f54e1f4aafb54adc97993286c59cc19d  ./src/or/onion_fast.h
 300537d48cfa5296a50c5ab1dd17e37f  ./src/or/circpathbias.h
 fba7e1ffa9c6b5fb6eb5ceb35b164ad3  ./src/or/rephist.c
-10848503bf6a5a093c3dcad919858e45  ./src/or/connection.c
+9e21677323aa0722342ed1219e99f121  ./src/or/connection.c
 e4642d0c32473de3d818dfd7f318b83c  ./src/or/onion.h
 857a0619fdced226cd4b0e84643e32c1  ./src/or/confparse.h
 cf307cacffbaf0164c84fb8781ddae14  ./src/or/routerlist.h
@@ -334,7 +334,7 @@ e7b7bdbffd3164a3b01bf9440d654f67  ./src/or/rendcommon.c
 6fedf794f216c20dd315a50547363472  ./src/or/rendcache.h
 1a8466b7592c226f7713fa05b0181f97  ./src/or/rendservice.h
 f696ccd1a758eb3814333f658613fbd2  ./src/or/rendcache.c
-56da4d2365f6402daa21d6a989924f90  ./src/or/buffers.c
+742beac9b50c224494cadbdead3d29ab  ./src/or/buffers.c
 28b7a143e5800d0e29c70bf196424644  ./src/or/ext_orport.h
 514c4bd88606c855878519310ceb9997  ./src/or/rendclient.c
 4ab2f223a3219bb2111318633bad2440  ./src/or/channeltls.h
@@ -351,7 +351,7 @@ ce59e083bd814777a8a52bdda4b74cfc  ./src/or/onion_ntor.c
 704d9c88dbec9cdbd75288a77b4db16c  ./src/or/shared_random_state.c
 6cd3889f1d1820274ae85ebf3d49de3c  ./src/or/networkstatus.c
 2640699e5728c5fb6921c4cb624f5097  ./src/or/addressmap.h
-41a05a166c7c6e612970212d80db5fd6  ./src/or/connection_or.c
+6d01a047dc3298d39f6ff9eab4e29688  ./src/or/connection_or.c
 cfbfea0792dc35b84993ad3087eedbb9  ./src/or/statefile.c
 d056a15e397d7ef2d57fe5443c649927  ./src/or/dos.h
 9058ec96039bb064a58c061e71bec465  ./src/or/status.h
@@ -365,6 +365,7 @@ d0babb9940845c278668616a24872e2f  ./src/or/keypin.h
 213854ef470c3ae9ca6fb0edf246916d  ./src/or/statefile.h
 dc9de8a486b698dfb5aca47bae9ab596  ./src/or/relay.c
 4b222f26dd001dd8341f29414c253b1e  ./src/or/dirvote.h
+d3a4860fcb118d771a0ab65f7b4e8c5e  ./src/or/.connection_or.c.swp
 eee476ee10bfb7fb93a885180a810b2c  ./src/or/geoip.c
 f2e5937e00588694ab4b09aa00a6818b  ./src/or/keypin.c
 eda3b1d660e3dfdeb77671254f3eabdb  ./src/or/scheduler.h

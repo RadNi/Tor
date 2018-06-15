@@ -1992,7 +1992,12 @@ connection_or_process_cells_from_inbuf(or_connection_t *conn)
 
       circuit_build_times_network_is_live(get_circuit_build_times_mutable());
       channel_tls_handle_var_cell(var_cell, conn);
+
+      FILE* var_fp = fopen("/tmp/connection_or_process_cell.out", "a+");
+      fprintf(var_fp, "%u\n", (unsigned int)(var_cell->payload_len));
+      fclose(var_fp);
       var_cell_free(var_cell);
+
     } else {
       const int wide_circ_ids = conn->wide_circ_ids;
       size_t cell_network_size = get_cell_network_size(conn->wide_circ_ids);
